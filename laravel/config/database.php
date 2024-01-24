@@ -16,6 +16,7 @@ return [
     */
 
     'default' => env('DB_CONNECTION', 'mysql'),
+    //change .env file with dbname,localhost-usname,pwd
 
     /*
     |--------------------------------------------------------------------------
