@@ -2,7 +2,7 @@
 
 @unless(count($listing) == 0)
     @foreach($listing as $lists)
-        <h3>{{$lists['title']}}</h3>
+        <a href="/{{$lists['id']}}"><h3>{{$lists['title']}}</h3></a>
         <p>{{$lists['description']}}</p>
     @endforeach
 @else

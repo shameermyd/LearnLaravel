@@ -16,4 +16,14 @@ Class Listing {
             ]
         ];    
     }
+
+    public static function find($id){
+        $listAll    =   self::all();
+        foreach($listAll as $list){
+            if($list['id'] == $id){
+                return $list;
+            }
+        }
+    }
+    
 }

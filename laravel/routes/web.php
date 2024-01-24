@@ -22,6 +22,13 @@ Route::get('/',function(){
     ]);
 });
 
+Route::get('/{id}',function($id){
+    return view('list_sep',[
+        'heading'=>'find list',
+        'lists' => Listing::find($id)
+    ]);
+});
+
 Route::get('/hello',function (){
     return response("<h1>Hello World</h1>")
     ->header('Content-Type','text/plain')   //in the browser console, we can check it Header
