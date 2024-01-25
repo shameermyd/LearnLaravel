@@ -15,13 +15,13 @@ class CreateListingsTable extends Migration
     {
         Schema::create('listings', function (Blueprint $table) {
             $table->id();
-            $table->string('title');
+            $table->string('title'); //php artisan make:migration create_listings_table
             $table->string('tags');
             $table->string('company');
             $table->string('location');
             $table->string('email');
             $table->string('website');
-            $table->string('description');
+            $table->string('description',500);
             $table->timestamps();
         });
     }
