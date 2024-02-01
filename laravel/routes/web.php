@@ -22,7 +22,7 @@ Route::get('/',function(){
     ]);
 });
 
-Route::get('/{id}',function($id){
+Route::get('/lists/{id}',function($id){
     return view('list_sep',[
         'heading'=>'find list',
         'lists' => Listing::find($id)
